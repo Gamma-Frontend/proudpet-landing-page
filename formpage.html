@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="node_modules/bs-stepper/dist/css/bs-stepper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>PROUDPET</title>
+  </head>
+  <body>
+    <div class="form-page">
+      <div class="logo">
+        <img src="assets/img_logo_x2.png" alt="">
+      </div>
+      <form class="join-form">
+        <h1>加入我們</h1>
+        <div class="bs-stepper">
+          <div class="bs-stepper-header" role="tablist">
+            <div class="step" data-target="#step1">
+              <button type="button" class="step-trigger" role="tab">
+                <span class="bs-stepper-circle">1</span>
+                <div>基本資料</div>
+              </button>
+            </div>
+            <div class="line"></div>
+            <div class="step" data-target="#step2">
+              <button type="button" class="step-trigger" role="tab">
+                <span class="bs-stepper-circle">2</span>
+                <div>上傳照片</div>
+              </button>
+            </div>
+            <div class="line"></div>
+            <div class="step" data-target="#step3">
+              <button type="button" class="step-trigger" role="tab">
+                <span class="bs-stepper-circle">3</span>
+                <div>廠商資訊</div>
+              </button>
+            </div>
+          </div>
+
+          <div class="bs-stepper-content">
+            <div id="step1" class="stepper-content content" role="tabpanel">
+              <div class="form-group">
+                <h3><span>1</span>基本資料</h3>
+                <div class="form-inputs-1">
+                  <div class="form-control">
+                    <label for="">帳號</label>
+                    <input placeholder="請輸入帳號" />
+                  </div>
+                  <div class="form-control">
+                    <label for="">密碼</label>
+                    <input placeholder="請輸入密碼" />
+                  </div>
+                  <div class="form-control">
+                    <label for="">廠商名稱</label>
+                    <input placeholder="請輸入廠商名稱" />
+                  </div>
+                  <div class="form-control">
+                    <label for="">英文名稱</label>
+                    <input placeholder="請輸入英文名稱" />
+                  </div>
+                  <div class="form-control">
+                    <label for="">電話</label>
+                    <input placeholder="請輸入電話" />
+                  </div>
+                  <div class="form-control">
+                    <label for="">Email</label>
+                    <input placeholder="請輸入 Email" />
+                  </div>
+                </div>
+                <button type="button" onclick="stepper.next()">下一步</button>
+              </div>
+            </div>
+            <div id="step2" class="stepper-content content" role="tabpanel">
+              <div class="form-group">
+                <h3><span>2</span>上傳照片</h3>
+                <div class="form-inputs-2">
+                  <div class="form-control">
+                    <label for="">店家外觀 2 張</label>
+                    <input type="file" placeholder="請輸入行業別" />
+                    <div class="imgs">
+                      <img src="assets/shop.jpg" alt="">
+                      <img src="assets/shop.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="form-control">
+                    <label for="">店內照片 3～5 張</label>
+                    <input type="file" placeholder="請輸入行業別" />
+                    <div class="imgs">
+                      <img src="assets/shop.jpg" alt="">
+                      <img src="assets/shop.jpg" alt="">
+                      <img src="assets/shop.jpg" alt="">
+                      <img src="assets/shop.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="form-control">
+                    <label for="">公司營業登記</label>
+                    <input type="file" placeholder="請輸入行業別" />
+                    <div class="imgs">
+                      <img src="assets/shop.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="btns">
+                  <button type="button" onclick="stepper.previous()">上一步</button>
+                  <button type="button" onclick="stepper.next()">下一步</button>
+                </div>
+              </div>
+            </div>
+            <div id="step3" class="stepper-content content" role="tabpanel">
+              <div class="form-group">
+                <h3><span>3</span>廠商資訊</h3>
+                <div class="form-inputs-3">
+                  <div class="form-control">
+                    <label for="">行業別</label>
+                    <input placeholder="請輸入行業別" />
+                  </div>
+                  <div class="form-control">
+                    <label for="">門市名稱</label>
+                    <input placeholder="請輸入門市名稱" />
+                  </div>
+                  <div class="form-control">
+                    <label for="">負責人／聯絡人</label>
+                    <input placeholder="請輸入負責人／聯絡人" />
+                  </div>
+                  <div class="form-control">
+                    <label for="">聯絡電話</label>
+                    <input placeholder="請輸入聯絡電話" />
+                  </div>
+                  <div class="form-control">
+                    <label for="">手機號碼</label>
+                    <input placeholder="請輸入手機號碼" />
+                  </div>
+                  <div class="form-control">
+                    <label for="">門市地址</label>
+                    <input placeholder="請輸入門市地址" />
+                  </div>
+                </div>
+                <div class="btns">
+                  <button type="button" onclick="stepper.previous()">上一步</button>
+                  <button type="button" onclick="simulateSubmit()">完成送出</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </form>
+    </div>
+      <script src="node_modules/bs-stepper/dist/js/bs-stepper.min.js"></script>
+      <script src="js/stepper.js"></script>
+  </body>
+</html>
