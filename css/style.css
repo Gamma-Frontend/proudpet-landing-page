@@ -59,31 +59,41 @@ body {
     z-index: 10; }
   .box-1 .text-box {
     position: absolute;
-    width: 630px;
     top: 20%;
     left: 10%;
     z-index: 1000; }
     .box-1 .text-box h1 {
-      font-size: 35px;
+      font-size: 3.5vw;
       font-weight: 700;
-      line-height: 55px;
-      margin-bottom: 24px; }
+      line-height: 5vw;
+      margin-bottom: 3vw; }
+      @media only screen and (max-width: 34.375em) {
+        .box-1 .text-box h1 {
+          font-size: 5vw;
+          line-height: 8vw;
+          width: 80%; } }
     .box-1 .text-box h4 {
-      font-size: 16px;
+      font-size: 1.5vw;
       font-weight: 500;
-      line-height: 23px;
-      margin-bottom: 48px; }
+      line-height: 3vw;
+      margin-bottom: 6vw; }
+      @media only screen and (max-width: 34.375em) {
+        .box-1 .text-box h4 {
+          display: none; } }
     .box-1 .text-box a {
-      height: 47px;
-      width: 112px;
-      padding: 12px 24px;
+      padding: 1vw 1.6vw;
       border-radius: 8px;
       background-color: #A5C265;
       border: none;
       font-weight: 700;
-      font-size: 16px;
+      font-size: 1.5vw;
       color: white;
       cursor: pointer; }
+      @media only screen and (max-width: 34.375em) {
+        .box-1 .text-box a {
+          padding: 1.6vw 4.6vw;
+          font-weight: 500;
+          letter-spacing: 1px; } }
       .box-1 .text-box a:hover {
         background-color: #98b35d;
         color: white; }
@@ -92,30 +102,42 @@ body {
         color: white; }
 
 .box-2 {
-  height: 32vw;
+  height: 35vw;
   background-color: #F7F4EF;
   position: relative; }
+  @media only screen and (max-width: 34.375em) {
+    .box-2 {
+      height: 40vw; } }
   .box-2 .text-box {
     position: absolute;
-    width: 1000px;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000; }
     .box-2 .text-box h3 {
       color: #74A968;
-      font-size: 40px;
+      font-size: 3vw;
       font-weight: 700;
       margin-bottom: 12px;
       letter-spacing: 4px;
       text-align: center; }
+      @media only screen and (max-width: 34.375em) {
+        .box-2 .text-box h3 {
+          font-size: 5vw;
+          line-height: 8vw; } }
     .box-2 .text-box p {
       font-weight: 400;
-      font-size: 24px;
-      line-height: 55px;
+      font-size: 1.5vw;
       letter-spacing: 4px;
       color: #5E5E5E;
       text-align: center; }
+      @media only screen and (max-width: 34.375em) {
+        .box-2 .text-box p {
+          width: 80%;
+          margin: auto;
+          font-size: 1vw;
+          line-height: 5vw; } }
 
 .box-3 {
   position: relative; }
@@ -128,36 +150,65 @@ body {
     transform: translate(-20%, -50%);
     z-index: 1000;
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    grid-row-gap: 14px; }
+    grid-template-rows: repeat(5, max-content);
+    grid-row-gap: 1vw; }
     .box-3 .text-box h3 {
-      font-size: 24px;
+      font-size: 2.2vw;
       font-weight: 700;
-      line-height: 55px;
+      line-height: 5vw;
       letter-spacing: 4px; }
+      @media only screen and (max-width: 34.375em) {
+        .box-3 .text-box h3 {
+          font-size: 3vw;
+          font-weight: 400; } }
+      .box-3 .text-box h3 span {
+        display: none; }
+        @media only screen and (max-width: 34.375em) {
+          .box-3 .text-box h3 span {
+            display: unset; } }
     .box-3 .text-box p {
-      font-size: 18px;
+      font-size: 1.2vw;
       font-weight: 400;
-      line-height: 29px;
+      line-height: 3vw;
       letter-spacing: 2px; }
+      @media only screen and (max-width: 40em) {
+        .box-3 .text-box p {
+          font-size: 0.8vw; } }
+      @media only screen and (max-width: 34.375em) {
+        .box-3 .text-box p {
+          display: none; } }
 
 .box-4 {
   position: relative; }
   .box-4 .text-box {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 10%;
     z-index: 1000; }
+    @media only screen and (max-width: 34.375em) {
+      .box-4 .text-box {
+        top: 20%; } }
     .box-4 .text-box h3 {
-      font-size: 28px;
+      font-size: 3vw;
       font-weight: 700;
-      line-height: 55px;
-      letter-spacing: 4px; }
+      line-height: 5vw;
+      letter-spacing: 4px;
+      margin-bottom: 1vw; }
+      @media only screen and (max-width: 34.375em) {
+        .box-4 .text-box h3 {
+          font-size: 5vw;
+          line-height: 10vw; } }
     .box-4 .text-box p {
-      font-size: 20px;
+      font-size: 1.5vw;
       font-weight: 400;
-      line-height: 29px;
-      letter-spacing: 2px; }
+      line-height: 3vw;
+      letter-spacing: 2px;
+      width: 60%; }
+      @media only screen and (max-width: 34.375em) {
+        .box-4 .text-box p {
+          font-size: 1vw;
+          width: 50%;
+          line-height: 5vw; } }
 
 .box-5 {
   display: flex;
@@ -166,23 +217,39 @@ body {
   padding: 100px 0 0 0; }
   .box-5 .text-box {
     text-align: center;
-    margin-bottom: 70px; }
+    margin-bottom: 8vw;
+    width: 90%; }
+    @media only screen and (max-width: 34.375em) {
+      .box-5 .text-box {
+        width: 80%; } }
     .box-5 .text-box h3 {
-      font-size: 28px;
+      font-size: 3vw;
       font-weight: 700;
-      line-height: 55px;
-      letter-spacing: 4px; }
+      line-height: 5vw;
+      letter-spacing: 4px;
+      margin-bottom: 1vw; }
+      @media only screen and (max-width: 34.375em) {
+        .box-5 .text-box h3 {
+          font-size: 5vw;
+          line-height: 10vw; } }
     .box-5 .text-box p {
-      font-size: 20px;
+      font-size: 1.5vw;
       font-weight: 400;
-      line-height: 29px;
+      line-height: 3vw;
       letter-spacing: 2px; }
+      @media only screen and (max-width: 34.375em) {
+        .box-5 .text-box p {
+          font-size: 1vw;
+          line-height: 5vw; } }
   .box-5 img {
     width: 62vw; }
 
 .box-6 {
   position: relative;
   height: 500px; }
+  @media only screen and (max-width: 34.375em) {
+    .box-6 {
+      height: 300px; } }
   .box-6 .text-box {
     position: absolute;
     top: 50%;
@@ -196,20 +263,29 @@ body {
     .box-6 .text-box h3 {
       font-size: 2.2vw;
       font-weight: 700;
-      line-height: 55px;
+      line-height: 4vw;
       letter-spacing: 4px;
       color: white;
       margin-bottom: 1vw; }
+      @media only screen and (max-width: 34.375em) {
+        .box-6 .text-box h3 {
+          letter-spacing: 2px;
+          margin-bottom: 2vw;
+          font-weight: 400; } }
     .box-6 .text-box p {
       font-size: 1.4vw;
       font-weight: 400;
-      line-height: 29px;
+      line-height: 2vw;
       letter-spacing: 2px;
       margin-bottom: 2vw;
       color: white; }
+      @media only screen and (max-width: 34.375em) {
+        .box-6 .text-box p {
+          display: none; } }
     .box-6 .text-box a {
-      height: 3.2vw;
-      width: 9vw;
+      font-size: 1.4vw;
+      height: 3.8vw;
+      width: 10vw;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -219,6 +295,10 @@ body {
       font-weight: 700;
       font-size: 1.2vw;
       color: #A5C265; }
+      @media only screen and (max-width: 34.375em) {
+        .box-6 .text-box a {
+          height: 5.6vw;
+          width: 22vw; } }
       .box-6 .text-box a:hover {
         color: #A5C265;
         cursor: pointer; }
@@ -261,14 +341,27 @@ body {
 .bs-stepper {
   width: 50vw;
   padding-bottom: 100px; }
+  @media only screen and (max-width: 63em) {
+    .bs-stepper {
+      width: 70vw; } }
 
 .bs-stepper-header {
   background-color: white;
+  width: 100%;
   margin-bottom: 24px;
   border-radius: 24px; }
+  @media (max-width: 520px) {
+    .bs-stepper-header {
+      margin: 20px 0; } }
   .bs-stepper-header .bs-stepper-circle {
     background-color: #74A968;
     margin-right: 10px; }
+    @media only screen and (max-width: 34.375em) {
+      .bs-stepper-header .bs-stepper-circle {
+        margin-right: 0; } }
+  @media only screen and (max-width: 34.375em) {
+    .bs-stepper-header .step-trigger div {
+      display: none; } }
 
 .bs-stepper-content {
   background-color: white;

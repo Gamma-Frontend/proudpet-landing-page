@@ -21,36 +21,49 @@ body {
 
   & .text-box {
     position: absolute;
-    width: 630px;
     top: 20%;
     left: 10%;
     z-index: 1000;
 
     & h1 {
-      font-size: 35px;
+      font-size: 3.5vw;
       font-weight: 700;
-      line-height: 55px;
-      margin-bottom: 24px;
+      line-height: 5vw;
+      margin-bottom: 3vw;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 5vw;
+        line-height: 8vw;
+        width: 80%;
+      }
     }
 
     & h4 {
-      font-size: 16px;
+      font-size: 1.5vw;
       font-weight: 500;
-      line-height: 23px;
-      margin-bottom: 48px;
+      line-height: 3vw;
+      margin-bottom: 6vw;
+
+      @media only screen and (max-width: $bp-small) {
+        display: none;
+      }
     }
 
     & a {
-      height: 47px;
-      width: 112px;
-      padding: 12px 24px;
+      padding: 1vw 1.6vw;
       border-radius: 8px;
       background-color: #A5C265;
       border: none;
       font-weight: 700;
-      font-size: 16px;
+      font-size: 1.5vw;
       color: white;
       cursor: pointer;
+
+      @media only screen and (max-width: $bp-small) {
+        padding: 1.6vw 4.6vw;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
 
       &:hover {
         background-color: #98b35d;
@@ -66,13 +79,17 @@ body {
 }
 
 .box-2 {
-  height: 32vw;
+  height: 35vw;
   background-color: #F7F4EF;
   position: relative;
 
+  @media only screen and (max-width: $bp-small) {
+    height: 40vw;
+  }
+
   & .text-box {
     position: absolute;
-    width: 1000px;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -80,20 +97,31 @@ body {
 
     & h3 {
       color: #74A968;
-      font-size: 40px;
+      font-size: 3vw;
       font-weight: 700;
       margin-bottom: 12px;
       letter-spacing: 4px;
       text-align: center;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 5vw;
+        line-height: 8vw;
+      }
     }
 
     & p {
       font-weight: 400;
-      font-size: 24px;
-      line-height: 55px;
+      font-size: 1.5vw;
       letter-spacing: 4px;
       color: #5E5E5E;
       text-align: center;
+
+      @media only screen and (max-width: $bp-small) {
+        width: 80%;
+        margin: auto;
+        font-size: 1vw;
+        line-height: 5vw;
+      }
     }
   }
 }
@@ -112,21 +140,42 @@ body {
     transform: translate(-20%, -50%);
     z-index: 1000;
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    grid-row-gap: 14px;
+    grid-template-rows: repeat(5, max-content);
+    grid-row-gap: 1vw;
 
     & h3 {
-      font-size: 24px;
+      font-size: 2.2vw;
       font-weight: 700;
-      line-height: 55px;
+      line-height: 5vw;
       letter-spacing: 4px;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 3vw;
+        font-weight: 400;
+      }
+
+      & span {
+        display: none;
+
+        @media only screen and (max-width: $bp-small) {
+          display: unset;
+        }
+      }
     }
 
     & p {
-      font-size: 18px;
+      font-size: 1.2vw;
       font-weight: 400;
-      line-height: 29px;
+      line-height: 3vw;
       letter-spacing: 2px;
+
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 0.8vw;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        display: none;
+      }
     }
   }
 }
@@ -136,22 +185,39 @@ body {
 
   & .text-box {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 10%;
     z-index: 1000;
 
+    @media only screen and (max-width: $bp-small) {
+      top: 20%;
+    }
+
     & h3 {
-      font-size: 28px;
+      font-size: 3vw;
       font-weight: 700;
-      line-height: 55px;
+      line-height: 5vw;
       letter-spacing: 4px;
+      margin-bottom: 1vw;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 5vw;
+        line-height: 10vw;
+      }
     }
 
     & p {
-      font-size: 20px;
+      font-size: 1.5vw;
       font-weight: 400;
-      line-height: 29px;
+      line-height: 3vw;
       letter-spacing: 2px;
+      width: 60%;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1vw;
+        width: 50%;
+        line-height: 5vw;
+      }
     }
   }
 }
@@ -162,22 +228,39 @@ body {
   align-items: center;
   padding: 100px 0 0 0;
 
+
   .text-box {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 8vw;
+    width: 90%;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 80%;
+    }
 
     & h3 {
-      font-size: 28px;
+      font-size: 3vw;
       font-weight: 700;
-      line-height: 55px;
+      line-height: 5vw;
       letter-spacing: 4px;
+      margin-bottom: 1vw;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 5vw;
+        line-height: 10vw;
+      }
     }
 
     & p {
-      font-size: 20px;
+      font-size: 1.5vw;
       font-weight: 400;
-      line-height: 29px;
+      line-height: 3vw;
       letter-spacing: 2px;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1vw;
+        line-height: 5vw;
+      }
     }
   }
 
@@ -189,6 +272,10 @@ body {
 .box-6 {
   position: relative;
   height: 500px;
+
+  @media only screen and (max-width: $bp-small) {
+    height: 300px;
+  }
 
   & .text-box {
     position: absolute;
@@ -204,24 +291,35 @@ body {
     & h3 {
       font-size: 2.2vw;
       font-weight: 700;
-      line-height: 55px;
+      line-height: 4vw;
       letter-spacing: 4px;
       color: white;
       margin-bottom: 1vw;
+
+      @media only screen and (max-width: $bp-small) {
+        letter-spacing: 2px;
+        margin-bottom: 2vw;
+        font-weight: 400;
+      }
     }
 
     & p {
       font-size: 1.4vw;
       font-weight: 400;
-      line-height: 29px;
+      line-height: 2vw;
       letter-spacing: 2px;
       margin-bottom: 2vw;
       color: white;
+
+      @media only screen and (max-width: $bp-small) {
+        display: none;
+      }
     }
 
     & a {
-      height: 3.2vw;
-      width: 9vw;
+      font-size: 1.4vw;
+      height: 3.8vw;
+      width: 10vw;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -231,6 +329,11 @@ body {
       font-weight: 700;
       font-size: 1.2vw;
       color: #A5C265;
+
+      @media only screen and (max-width: $bp-small) {
+        height: 5.6vw;
+        width: 22vw;
+      }
 
       &:hover {
         color: #A5C265;
