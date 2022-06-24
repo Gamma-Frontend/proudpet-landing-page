@@ -1,37 +1,34 @@
-.line-add-friend {
-  position: relative;
+.bg-image {
+  width: 791px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
-  & .bg-image {
-    width: 50rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
 
-  & .title {
-    position: absolute;
-    top: 60px;
-    left: 120px;
-    font-size: 30px;
-    color: #3BAE37;
-  }
+.title {
+  position: absolute;
+  top: 100px;
+  left: 170px;
+  font-size: 45px;
+  color: #3BAE37;
+}
 
-  & .code {
-    position: absolute;
-    top: 555px;
-    left: 82px;
+.code {
+  position: absolute;
+  top: 880px;
+  left: 130px;
+}
 
-    & img {
-      width: 110px;
-    }
-  }
+.code-img {
+  width: 170px;
+}
 
-  & .id {
-    position: absolute;
-    top: 574px;
-    left: 322px;
-    font-size: 15px;
-    color: #3BAE37;
-  }
+.id {
+  position: absolute;
+  top: 907px;
+  left: 508px;
+  font-size: 24px;
+  color: #3BAE37;
 }
