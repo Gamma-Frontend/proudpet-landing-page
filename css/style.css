@@ -438,3 +438,30 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 20px; }
+
+.line-add-friend {
+  position: relative; }
+  .line-add-friend .bg-image {
+    width: 50rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+  .line-add-friend .title {
+    position: absolute;
+    top: 60px;
+    left: 120px;
+    font-size: 30px;
+    color: #3BAE37; }
+  .line-add-friend .code {
+    position: absolute;
+    top: 555px;
+    left: 82px; }
+    .line-add-friend .code img {
+      width: 110px; }
+  .line-add-friend .id {
+    position: absolute;
+    top: 574px;
+    left: 322px;
+    font-size: 15px;
+    color: #3BAE37; }
